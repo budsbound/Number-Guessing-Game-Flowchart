@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> GenerateNumber[Generate Random Number]
+    Start([Start]) --> GenerateNumber[Generate Random Number 1-100]
     GenerateNumber --> UserInput[Get User Input]
     UserInput --> CheckInput{Is Input Valid?}
     
@@ -17,3 +17,10 @@ flowchart TD
     HighGuess --> UserInput
     LowGuess --> UserInput
     CorrectGuess --> End([End])
+```
+initially the game begins by generating a random number between 1-100
+
+asks the user for a prompt and checks validity
+
+generates feedback based on input
+
