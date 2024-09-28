@@ -10,9 +10,9 @@ flowchart TD
     CheckInput -- No --> InvalidInput[Display Error Message]
     InvalidInput --> UserInput
     
-    Compare -- Correct --> CorrectGuess[Display "Correct!"]
-    Compare -- TooHigh --> HighGuess[Display "Too High!"]
-    Compare -- TooLow --> LowGuess[Display "Too Low!"]
+    Compare -- Correct --> CorrectGuess([Correct!])
+    Compare -- TooHigh --> HighGuess([Too High!])
+    Compare -- TooLow --> LowGuess([Too Low!])
     
     HighGuess --> UserInput
     LowGuess --> UserInput
